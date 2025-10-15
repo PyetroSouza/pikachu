@@ -1,0 +1,22 @@
+/* "variavél" para paleta de cores*, root é global*/
+:root{
+    --primary-color: #F5CF06;
+    --secundary-color: #8E4106;
+}
+body{
+    height: 100vh;
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    background-color: bisque;
+}
+main{
+    background-color: aqua;
+    flex-grow: 1;
+}
+footer{
+    background-color: aquamarine;
+}
