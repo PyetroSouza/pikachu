@@ -30,9 +30,10 @@ main {
     display: flex;
     flex-direction: column;
 }
-.sombra{
+
+.sombra {
     position: absolute;
-    font-size: 400px;
+    font-size: 28vw;
     color: #ffffff55;
     z-index: -999;
     top: 50%;
@@ -43,7 +44,7 @@ main {
 h1 {
     flex-grow: 1;
     letter-spacing: 5px;
-    font-size: 300px;
+    font-size: 22vw;
     color: white;
     display: flex;
     justify-content: center;
@@ -80,7 +81,12 @@ h1 {
     justify-content: center;
     color: white;
 }
-.pikachu{
+
+.descricao {
+    z-index: 1;
+}
+
+.pikachu {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -91,3 +97,40 @@ footer {
     text-align: center;
     color: var(--secundary-color);
 }
+
+/*Tablet*/
+@media (max-width: 1024px) {
+    body {
+        padding: 30px;
+    }
+
+    .sombra {
+        transform: translate(-50%, -180%);
+    }
+
+    h1 {
+        transform: translate(0, -30%);
+    }
+
+    .container {
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+        padding: 0;
+        gap: 8px;
+    }
+
+    .descricao p {
+        text-align: center;
+    }
+    .pikachu {
+transform: translate(-45%,-50%);
+    }
+
+    footer {
+        display: none;
+    }
+}
+
+/*Celular*/
+@media (max-width: 480px) {}
