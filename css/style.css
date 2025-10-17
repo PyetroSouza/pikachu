@@ -123,8 +123,9 @@ footer {
     .descricao p {
         text-align: center;
     }
+
     .pikachu {
-transform: translate(-45%,-50%);
+        transform: translate(-45%, -50%);
     }
 
     footer {
@@ -133,4 +134,24 @@ transform: translate(-45%,-50%);
 }
 
 /*Celular*/
-@media (max-width: 480px) {}
+@media (max-width: 480px) {
+    .descricao p {
+        display: none;
+    }
+.sombra{
+    transform: translate(-50%, -220%);
+}
+h1{
+    transform: translate(0,-22%);
+}
+.descricao h2{
+    font-size: 38px;
+}
+.container a{
+    width: 100%;
+} 
+
+    .pikachu {
+        height: 50vh;
+    }
+}
